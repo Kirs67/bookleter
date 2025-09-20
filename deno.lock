@@ -2,6 +2,7 @@
   "version": "5",
   "specifiers": {
     "jsr:@oak/commons@1": "1.0.1",
+    "jsr:@oak/oak@*": "17.1.6",
     "jsr:@oak/oak@^17.1.6": "17.1.6",
     "jsr:@std/assert@1": "1.0.14",
     "jsr:@std/bytes@1": "1.0.6",
@@ -24,9 +25,11 @@
     "npm:globals@^16.4.0": "16.4.0",
     "npm:path-to-regexp@^6.3.0": "6.3.0",
     "npm:react-dom@^19.1.1": "19.1.1_react@19.1.1",
+    "npm:react-router-dom@6": "6.30.1_react@19.1.1_react-dom@19.1.1__react@19.1.1",
     "npm:react@^19.1.1": "19.1.1",
     "npm:typescript-eslint@^8.43.0": "8.44.0_eslint@9.36.0_typescript@5.8.3_@typescript-eslint+parser@8.44.0__eslint@9.36.0__typescript@5.8.3",
     "npm:typescript@~5.8.3": "5.8.3",
+    "npm:vite@*": "7.1.6_picomatch@4.0.3",
     "npm:vite@^7.1.6": "7.1.6_picomatch@4.0.3"
   },
   "jsr": {
@@ -474,6 +477,9 @@
         "@nodelib/fs.scandir",
         "fastq"
       ]
+    },
+    "@remix-run/router@1.23.0": {
+      "integrity": "sha512-O3rHJzAQKamUz1fvE0Qaw0xSFqsA/yafi2iqeE0pvdFtCO1viYx8QL6f3Ln/aCCTLxs68SLf0KPM9eSeM8yBnA=="
     },
     "@rolldown/pluginutils@1.0.0-beta.35": {
       "integrity": "sha512-slYrCpoxJUqzFDDNlvrOYRazQUNRvWPjXA17dAOISY3rDMxX6k8K4cj2H+hEYMHF81HO3uNd5rHVigAWRM5dSg=="
@@ -1284,6 +1290,22 @@
     "react-refresh@0.17.0": {
       "integrity": "sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ=="
     },
+    "react-router-dom@6.30.1_react@19.1.1_react-dom@19.1.1__react@19.1.1": {
+      "integrity": "sha512-llKsgOkZdbPU1Eg3zK8lCn+sjD9wMRZZPuzmdWWX5SUs8OFkN5HnFVC0u5KMeMaC9aoancFI/KoLuKPqN+hxHw==",
+      "dependencies": [
+        "@remix-run/router",
+        "react",
+        "react-dom",
+        "react-router"
+      ]
+    },
+    "react-router@6.30.1_react@19.1.1": {
+      "integrity": "sha512-X1m21aEmxGXqENEPG3T6u0Th7g0aS4ZmoNynhbs+Cn+q+QGTLt+d5IQ2bHAXKzKcxGJjxACpVbnYQSCRcfxHlQ==",
+      "dependencies": [
+        "@remix-run/router",
+        "react"
+      ]
+    },
     "react@19.1.1": {
       "integrity": "sha512-w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ=="
     },
@@ -1449,6 +1471,17 @@
     "yocto-queue@0.1.0": {
       "integrity": "sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q=="
     }
+  },
+  "redirects": {
+    "https://cdn.pika.dev/pdf-lib@^1.7.0": "https://cdn.skypack.dev/pdf-lib@%5E1.7.0"
+  },
+  "remote": {
+    "https://cdn.skypack.dev/-/@pdf-lib/standard-fonts@v1.0.0-Z8Dxw2SAoP39vRoTIKF1/dist=es2019,mode=imports/optimized/@pdf-lib/standard-fonts.js": "7e7233fe50eff7cdacd5dfe148b2e8793ef2c0aacd1b09d09d74fa71ea588eac",
+    "https://cdn.skypack.dev/-/@pdf-lib/upng@v1.0.1-cDyYONcMEAs6JipZyc8F/dist=es2019,mode=imports/optimized/@pdf-lib/upng.js": "c1fa7f102bc8ece5a18e22f27a18929143c4bba9735b24ea23b0b0d8eaa8cd53",
+    "https://cdn.skypack.dev/-/pako@v1.0.11-HN3j6r6YXxSYMQQ5YY76/dist=es2019,mode=imports/optimized/pako.js": "cb928ba393bdb8c8b9b6509a68975a00e43780ed2424bf0c6e020890dc546e4b",
+    "https://cdn.skypack.dev/-/pdf-lib@v1.17.1-P8YmSI9gov9vMnrV7v2f/dist=es2019,mode=imports/optimized/pdf-lib.js": "ce55a997148b41a520719255d57af560fd269685241031d2502f0c7583d690b2",
+    "https://cdn.skypack.dev/-/tslib@v1.14.1-mWTe8wftGbG1xYC8gPyw/dist=es2019,mode=imports/optimized/tslib.js": "bde9e42ab1dee8764c8fef53a8165ab516af507bd5a6e120aae6d0922925ba74",
+    "https://cdn.skypack.dev/pdf-lib@%5E1.7.0": "11ccb0b2660b159faec9facfc77e47ad78e1d1ee41805f007b4dd11b62095e05"
   },
   "workspace": {
     "dependencies": [
