@@ -39,6 +39,6 @@ jobs:
         with:
           project: "bookleter"
           entrypoint: "api/main.ts"
-          root: "dist"
+          root: ""
           
           
