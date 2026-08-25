@@ -1,4 +1,4 @@
-import { PDFDocument } from 'https://cdn.pika.dev/pdf-lib@^1.7.0';
+import { PDFDocument } from "pdf-lib";
 
 export async function createBooklet(inputBytes: Uint8Array): Promise<Uint8Array> {
 	const inputPDF = await PDFDocument.load(inputBytes);
