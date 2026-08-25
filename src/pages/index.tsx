@@ -4,6 +4,8 @@ import { createBooklet } from "../util/booklet";
 const Index: React.FC = () => {
   const [status, setStatus] = useState<string>("");
 
+  const commitSha = import.meta.env.VITE_COMMIT_SHA ?? "dev";
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -78,6 +80,18 @@ const Index: React.FC = () => {
       <p id="status" className="mt-4 text-gray-700">
         {status}
       </p>
+
+      <span
+        style={{
+          position: "fixed",
+          bottom: "8px",
+          right: "8px",
+          fontSize: "10px",
+          color: "#9ca3af",
+        }}
+      >
+        {commitSha}
+      </span>
     </main>
   );
 };

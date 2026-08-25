@@ -5,7 +5,7 @@
   },
   "tasks": {
     "dev": "deno run -A npm:vite & deno run server:start",
-    "build": "deno run -A npm:vite build",
+    "build": "VITE_COMMIT_SHA=$(git rev-parse --short HEAD) deno run -A npm:vite build",
     "server:start": "deno run -A --watch ./api/main.ts",
     "serve": "deno run build && deno run server:start"
   },
