@@ -4,6 +4,7 @@ import deno from "@deno/vite-plugin";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/bookleter/",
   server: {
     port: 3000,
     proxy: {
